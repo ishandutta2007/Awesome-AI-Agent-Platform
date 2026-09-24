@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Dark Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d1a"/>
+      <stop offset="50%" stop-color="#10172a"/>
+      <stop offset="100%" stop-color="#070913"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyanPurpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#7000ff"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Radial Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Keyframe Animations for Dynamic Aspect */
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+
+    @keyframes dashFlow {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes floatOrb {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-15px) translateX(10px); }
+    }
+
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Dynamic Background Elements */
+    .bg-grid { stroke: #1e293b; stroke-width: 1; opacity: 0.35; }
+    .pulse-node-1 { animation: pulseNode 3s infinite ease-in-out; transform-origin: 150px 100px; }
+    .pulse-node-2 { animation: pulseNode 4s infinite ease-in-out 1s; transform-origin: 1050px 300px; }
+    .pulse-node-3 { animation: pulseNode 3.5s infinite ease-in-out 0.5s; transform-origin: 1000px 90px; }
+    
+    .connecting-line {
+      stroke: url(#cyanPurpleGrad);
+      stroke-width: 2;
+      stroke-dasharray: 8, 8;
+      animation: dashFlow 20s linear infinite;
+      opacity: 0.6;
+    }
+
+    .floating-orb-1 { animation: floatOrb 6s ease-in-out infinite; }
+    .floating-orb-2 { animation: floatOrb 8s ease-in-out infinite 2s; }
+    
+    .rotating-ring {
+      animation: rotateRing 25s linear infinite;
+      transform-origin: 600px 200px;
+    }
+
+    /* Foreground Text Styling - Ensures visibility and legibility */
+    .banner-title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 56px;
+      font-weight: 800;
+      fill: url(#textGrad);
+      letter-spacing: -0.5px;
+    }
+
+    .banner-subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      fill: #94a3b8;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-tag {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="400" fill="url(#bgGradient)" rx="16"/>
+
+  <!-- Subtle Cyber Grid Overlay -->
+  <g class="bg-grid">
+    <path d="M 0 50 L 1200 50 M 0 100 L 1200 100 M 0 150 L 1200 150 M 0 200 L 1200 200 M 0 250 L 1200 250 M 0 300 L 1200 300 M 0 350 L 1200 350" />
+    <path d="M 100 0 L 100 400 M 200 0 L 200 400 M 300 0 L 300 400 M 400 0 L 400 400 M 500 0 L 500 400 M 600 0 L 600 400 M 700 0 L 700 400 M 800 0 L 800 400 M 900 0 L 900 400 M 1000 0 L 1000 400 M 1100 0 L 1100 400" />
+  </g>
+
+  <!-- Ambient Glowing Orbs (Background Dynamic) -->
+  <g class="floating-orb-1" filter="url(#glowPurple)">
+    <circle cx="200" cy="120" r="90" fill="#7000ff" opacity="0.25" />
+  </g>
+  <g class="floating-orb-2" filter="url(#glowCyan)">
+    <circle cx="1000" cy="280" r="110" fill="#00f2fe" opacity="0.2" />
+  </g>
+
+  <!-- Dynamic Agent Network Graph Nodes (Behind Text) -->
+  <g>
+    <!-- Network Lines -->
+    <path d="M 100 80 L 250 180 L 180 320" class="connecting-line" />
+    <path d="M 1050 100 L 920 220 L 1080 340" class="connecting-line" />
+    <path d="M 250 180 L 920 220" class="connecting-line" opacity="0.3" />
+
+    <!-- Animated Nodes -->
+    <circle cx="150" cy="100" r="8" fill="#00f2fe" class="pulse-node-1" filter="url(#glowCyan)" />
+    <circle cx="250" cy="180" r="6" fill="#38bdf8" />
+    <circle cx="180" cy="320" r="10" fill="#7000ff" />
+
+    <circle cx="1000" cy="90" r="9" fill="#00f2fe" class="pulse-node-3" filter="url(#glowCyan)" />
+    <circle cx="920" cy="220" r="7" fill="#818cf8" />
+    <circle cx="1050" cy="300" r="11" fill="#c084fc" class="pulse-node-2" filter="url(#glowPurple)" />
+  </g>
+
+  <!-- Center Decorative Tech Accent Ring -->
+  <g class="rotating-ring" opacity="0.15">
+    <circle cx="600" cy="200" r="160" fill="none" stroke="url(#cyanPurpleGrad)" stroke-width="2" stroke-dasharray="20, 10, 5, 10" />
+  </g>
+
+  <!-- FOREGROUND CONTENT LAYER (Completely Legible & Clear) -->
+  <g transform="translate(600, 200)" text-anchor="middle">
+    
+    <!-- Category Pill Badge -->
+    <g transform="translate(0, -95)">
+      <rect x="-130" y="-18" width="260" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" opacity="0.9"/>
+      <text y="4" class="badge-tag">🤖 AGENTIC ECOSYSTEM 🤖</text>
+    </g>
+
+    <!-- Main Title -->
+    <text y="-20" class="banner-title" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.8))">
+      Awesome AI Agent Platform
+    </text>
+
+    <!-- Subtitle -->
+    <text y="30" class="banner-subtitle">
+      Curated Ecosystem of SaaS &amp; Open-Source AI Agent Frameworks
+    </text>
+
+    <!-- Subtext Tech Tags -->
+    <g transform="translate(0, 75)">
+      <text font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" letter-spacing="1">
+        MULTI-AGENT ORCHESTRATION • VISUAL WORKFLOWS • CODING AGENTS • PRODUCTION RUNTIMES
+      </text>
+    </g>
+  </g>
+</svg>
