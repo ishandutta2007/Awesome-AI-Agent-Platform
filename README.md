@@ -1,6 +1,6 @@
 # Awesome-AI-Agent-Platform
 
-## Top AI Agent Platform Ecosystem
+### Top AI Agent Platform Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Multi-Agent Orchestration, Agent Builders, Visual Workflows, Coding Agents & Production Agent Runtimes*  
