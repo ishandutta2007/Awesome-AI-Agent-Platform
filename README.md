@@ -67,9 +67,9 @@ Below is a comprehensive comparison of leading hosted commercial AI Agent Platfo
 
 ## ⚡ Open-Source GitHub Frameworks
 
-Open-source innovation dominates the AI agent landscape. Below are the top open-source projects, sorted by **GitHub Star Count (Descending)**.
+Open-source innovation dominates the AI agent landscape. Below are the top open-source projects, sorted by **GitHub Stars_Count (Descending)**.
 
-| 📦 Repository & Project | ⭐ GitHub Stars | 📄 License | 🛠️ Core Focus & Description |
+| 📦 Repository & Project | ⭐ GitHub_Stars | 📄 License | 🛠️ Core Focus & Description |
 | :--- | :--- | :--- | :--- |
 | **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | [![AutoGPT Stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers) | `MIT` | The pioneering goal-driven autonomous agent framework and suite for building persistent background agents. |
 | **[Dify](https://github.com/langgenius/dify)** | [![Dify Stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | `Apache-2.0` | Production-ready LLM application & agent development platform with visual workflow canvas, RAG, and agent ops. |
@@ -104,7 +104,7 @@ We welcome contributions from the community! Please follow these guidelines:
 
 1. 🍴 **Fork** the repository.
 2. 📝 Add or update entries in `README.md`.
-3. ℹ️ Include official links, 1–2 sentence factual summary, exact starting price/free tier details, and GitHub star counts.
+3. ℹ️ Include official links, 1–2 sentence factual summary, exact starting price/free tier details, and GitHub Stars_Counts.
 4. 📥 Submit a **Pull Request** with a clear title and description.
 
 ---
