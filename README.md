@@ -53,6 +53,7 @@ Below is a comprehensive comparison of leading hosted commercial AI Agent Platfo
 
 | 🏢 Platform / Product | 💵 Starting Paid Tier Price | 🎁 Free Tier / Trial Limit | 📊 Company Size & Valuation | 🔗 Description & Core Strengths |
 | :--- | :--- | :--- | :--- | :--- |
+| **[Tale](https://tale.dev/)** | Not publicly stated | Not publicly stated | Not publicly stated | Shared workspace for assigning reusable AI agents, sandboxed coding harnesses, and deliverable review. |
 | **[LangGraph Platform](https://www.langchain.com/langgraph)** | `$39 / seat / month` (Plus Tier) | **Developer Plan**: Free forever (5,000 base traces/mo allowance included) | **$1.25 Billion Valuation** ($260M Total Funding Raised) | Managed stateful runtime for durable, multi-step agentic graphs with deep LangSmith observability & human-in-the-loop controls. |
 | **[Dify Cloud](https://dify.ai/)** | `$59 / month` (Professional Plan) | **Sandbox Plan**: Free forever (200 one-time message credits, 50MB knowledge storage, 5 apps) | **$180 Million Valuation** ($30M Series Pre-A in March 2026) | Full-stack agentic workflow platform featuring visual canvas, RAG pipelines, and model management. |
 | **[Botpress](https://botpress.com/)** | `$89 / month` (Plus Tier) | **Pay-as-you-go Plan**: Free forever ($5/month recurring AI credit included) | **$120 Million Valuation** ($45M Total Funding Raised) | Enterprise-grade conversational agent builder with visual flow editor, autonomous execution, and hybrid AI engines. |
